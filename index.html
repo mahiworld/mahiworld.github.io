@@ -1,992 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Mahendra's personal portfolio or website.">
-  <meta name="author" content="Mahendra">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahendra — Senior Software Engineer, Backend &amp; Distributed Systems</title>
+  <meta name="description" content="Mahendra is a Senior Software Engineer with 5+ years building backend systems that scale — analyzing problems, designing reliable solutions, and owning them from development to deployment." />
+  <meta name="author" content="Mahendra" />
+  <meta name="theme-color" content="#faf8f3" />
+  <link rel="canonical" href="https://mahiworld.github.io/" />
 
-  <title>Mahendra - Professional Portfolio</title>
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mahendra — Senior Software Engineer, Backend &amp; Distributed Systems" />
+  <meta property="og:description" content="5+ years building backend systems that scale — from problem analysis and reliable system design to production deployment." />
+  <meta property="og:url" content="https://mahiworld.github.io/" />
+  <meta property="og:image" content="https://mahiworld.github.io/assets/images/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mahendra — Senior Software Engineer, Backend &amp; Distributed Systems" />
+  <meta name="twitter:description" content="5+ years building backend systems that scale — from problem analysis and reliable system design to production deployment." />
+  <meta name="twitter:image" content="https://mahiworld.github.io/assets/images/og-image.png" />
 
-  <!-- Favicon -->
-  <link rel="icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon-16.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon-192.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
 
-  <!-- Custom CSS Stylesheet -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- Google Fonts: Poppins -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
-  <!-- Additional metadata for SEO optimization -->
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#000000">
-
-  <!-- Open Graph for social media sharing -->
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Mahendra - Professional Portfolio">
-  <meta property="og:description" content="Explore Mahendra's portfolio showcasing skills, projects, and achievements.">
-  <meta property="og:image" content="./assets/images/og-image.jpg">
-  <meta property="og:url" content="https://www.mahendra-portfolio.com">
-
-  <!-- Twitter Card for Twitter sharing -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Mahendra - Professional Portfolio">
-  <meta name="twitter:description" content="Explore Mahendra's portfolio showcasing skills, projects, and achievements.">
-  <meta name="twitter:image" content="./assets/images/twitter-card.jpg">
-  <meta name="twitter:creator" content="@mahendra">
-
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mahendra",
+    "jobTitle": "Senior Software Engineer",
+    "description": "Senior Software Engineer specializing in backend development and distributed systems, with 5+ years building systems that scale.",
+    "url": "https://mahiworld.github.io/",
+    "email": "mailto:mahiworld4@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Jaipur",
+      "addressCountry": "IN"
+    },
+    "sameAs": [
+      "https://github.com/mahiworld",
+      "https://www.linkedin.com/in/mahendrachaudharycr7/"
+    ]
+  }
+  </script>
 </head>
-
 <body>
 
-  <!--
-    - #MAIN
-  -->
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <main>
+  <header class="site-header" id="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Mahendra — home">MAHENDRA<span class="brand-dot">.</span></a>
 
-    <!--
-      - #SIDEBAR
-    -->
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
 
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar.jpg" alt="Mahendra" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Mahendra">Mahendra</h1>
-
-          <p class="title">Software Engineer</p>
-        </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:mahiworld4@gmail.com" class="contact-link">mahiworld4@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919785686466" class="contact-link">+91-9785686466</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="05-11-1995">November 05, 1995</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Rajasthan, India</address>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-
-          <li class="social-item">
-            <a href="https://github.com/mahiworld" target="_blank" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.facebook.com/mahendrachaudharycr7/" target="_blank" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://twitter.com/iam__Mahendra" target="_blank" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.instagram.com/mahendra.chaudhary7/" target="_blank" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/mahendrachaudharycr7/" target="_blank" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <!-- <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Experience</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projects</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-          -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-        </ul>
-
+      <nav class="primary-nav" id="primaryNav">
+        <a href="#work" data-nav>Work</a>
+        <a href="#experience" data-nav>Experience</a>
+        <a href="#skills" data-nav>Skills</a>
+        <a href="#contact" data-nav>Contact</a>
+        <a class="btn btn-small" href="./assets/resume/Mahendra-Resume.pdf" target="_blank" rel="noopener">Résumé ↗</a>
       </nav>
+    </div>
+  </header>
 
+  <main id="main">
 
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-            Hello, I would describe myself as a collaborative and solution-driven software engineer with 
-            over four years of experience collaborating closely with designers, developers, and programmers to deliver software solutions.
-            Interestingly, I got introduced to programming at National Institute Of Technology, 
-            Srinagar where I completed my Bachelors in Computer Science and Engineering (2014-2018) with 7.59 aggregate.
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="wrap hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Senior Software Engineer — Backend &amp; Distributed Systems</p>
+          <h1 class="hero-title">Mahendra</h1>
+          <p class="hero-lede">
+            I build backend systems that scale — financial reconciliation, regulatory reporting,
+            and payment workflows for consumer products. Five-plus years turning ambiguous
+            problems into reliable, production-grade systems, end to end.
           </p>
-          <p>
-            I'm currently working as a Software Developer & DevOps Engineer for EPEK SOFTWARE SOLUTIONS PVT. LTD. 
-            My responsibilities include developing and testing Python and Golang-based APIs, 
-            as well as managing DevOps processes to ensure efficient deployment, monitoring, and scalability of our applications.
-            I actively contribute to the integration of APIs, third-party services, and databases, ensuring seamless functionality across different platforms. 
-          </p>
-          <p>
-            With a strong background in backend development, I bring a deep understanding of building scalable, efficient systems, 
-            along with hands-on experience in managing DevOps pipelines and automating workflows. I am passionate about problem-solving, 
-            optimizing processes, and creating secure, reliable solutions tailored to meet the unique needs of customers. 
-            My expertise extends to designing and developing web applications, working with cloud technologies, 
-            and ensuring accessibility, security, and performance
-          </p>
-        </section>
-        
-        <section class="timeline">
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-            <h3 class="h3">Here is a list of the technologies that I'm familiar with!</h3>
+
+          <div class="hero-meta">
+            <span class="meta-item"><span class="dot" aria-hidden="true"></span> Jaipur, India</span>
           </div>
-        
-          <div class="timeline-wrapper">
-            <ol class="timeline-list">
-              <li class="timeline-item">
-                <span>Golang</span>
-              </li>
-              <li class="timeline-item">
-                <span>Python</span>
-              </li>
-              <li class="timeline-item">
-                <span>MongoDB</span>
-              </li>
-              <li class="timeline-item">
-                <span>Fiber, Gin & Go-chi</span>
-              </li>
-              <li class="timeline-item">
-                <span>Flask & Django</span>
-              </li>
-              <li class="timeline-item">
-                <span>QuickBooks</span>
-              </li>
-            </ol>
 
-            <ol class="timeline-list right">
-                <li class="timeline-item">
-                  <span>Docker</span>
-                </li>
-                <li class="timeline-item">
-                  <span>Kubernetes</span>
-                </li>
-                <li class="timeline-item">
-                  <span>GitHub Actions CI/CD</span>
-                </li>
-                <li class="timeline-item">
-                  <span>DigitalOcean</span>
-                </li>
-                <li class="timeline-item">
-                  <span>Lens</span>
-                </li>
-                <li class="timeline-item">
-                  <span>HubSpot</span>
-                </li>
-            </ol>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="./assets/resume/Mahendra-Resume.pdf" target="_blank" rel="noopener">View résumé (PDF)</a>
+            <a class="btn btn-ghost" href="mailto:mahiworld4@gmail.com">mahiworld4@gmail.com</a>
           </div>
-        </section>
 
-        <!--------------->
-        <div class="modal-container" data-modal-container>
-          <div class="overlay" data-overlay></div>
-          <section class="testimonials-modal">
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-          </section>
+          <div class="hero-links">
+            <a href="https://github.com/mahiworld" target="_blank" rel="noopener">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/mahendrachaudharycr7/" target="_blank" rel="noopener">LinkedIn ↗</a>
+            <a href="tel:+919785686466">+91&nbsp;97856&nbsp;86466</a>
+          </div>
         </div>
 
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <div class="hero-figure reveal" aria-hidden="true">
+          <div class="figure-card">
+            <div class="figure-titlebar">
+              <span class="figure-dot dot-red"></span>
+              <span class="figure-dot dot-yellow"></span>
+              <span class="figure-dot dot-green"></span>
+              <span class="figure-titlebar-name">status.sh</span>
             </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">EPEK SOFTWARE SOLUTIONS PVT. LTD.</h4>
-
-              <span>Software Developer | March 2022 — Present | India</span>
-              <p class="timeline-text">
-                <p class="timeline-text">
-                  <strong>Automated Demo Scheduling using HubSpot API:</strong> Built an automated scheduling system using the HubSpot API to streamline 
-                  demo bookings and manage client interactions. This system automates lead capturing, demo scheduling, and follow-up reminders, improving 
-                  client engagement and sales efficiency. It includes automated notifications, calendar integration, and customized email workflows to 
-                  optimize the demo process, reducing manual intervention and enhancing the overall client experience.
-                </p>
-                <p class="timeline-text">
-                  <strong>Accounting System Integration with QuickBooks API:</strong> Developed an accounting system that integrates with QuickBooks API to 
-                  automate agreement and invoice generation, commission calculation, and commission confirmation for partners. The system allows seamless 
-                  creation and sending of invoices, commission management for partners, and efficient handling of financial transactions. 
-                  This project involved working with QuickBooks API for invoice management, custom commission logic, and data storage for 
-                  easy retrieval of financial details.
-                </p>
-                <p class="timeline-text">
-                  <strong>Facebook Ads Insights and Transaction Data Integration:</strong> Built a secure web application using Flask and Facebook's Graph API to automate 
-                  the retrieval of advertising insights and transaction data from Facebook Ads Manager. The project involves OAuth 2.0 authentication, allowing users 
-                  to securely authorize access to their Facebook Ads account. It fetches detailed transaction information, including billing details, transaction 
-                  status, and ad performance insights within a specified date range. This solution streamlines the data extraction process, enabling efficient 
-                  monitoring of ad expenditures and campaign effectiveness. Key technologies used include Flask, OAuth2Session, Facebook Graph API, and 
-                  SSL for secure data transfer.
-                </p>
-                <p class="timeline-text">
-                  <strong>Automated Data Retrieval Service for FTP Information:</strong> Developed a Golang-based service to efficiently fetch and process user-specific FTP data 
-                  stored in a MongoDB database. The system leverages generic functions to handle data retrieval, ensuring reusability and scalability. 
-                  The core functionality includes fetching user data, extracting associated FTP information, and adding contextual metadata like realm 
-                  information for further processing. This project utilizes MongoDB's driver for Go, supports dynamic filtering, and optimizes database 
-                  queries with flexible options, enabling streamlined data management for scheduled or on-demand operations.
-                </p>
-                <p class="timeline-text">
-                  <strong>Automated Discord Membership Monitoring Bot:</strong> Built a Golang-powered Discord bot using the Discord API to monitor server membership statuses. 
-                  The bot periodically checks all members of a specified Discord server to track their membership duration and send automated reminders for expiring memberships. 
-                  Key functionalities include scheduling regular membership checks, sending direct messages to users when their membership is about to expire, 
-                  and handling user commands for on-demand status updates. The bot uses environment variables for configuration, supports asynchronous operations, 
-                  and provides a seamless way to manage member engagement on Discord servers.
-                </p>
-                <p class="timeline-text">
-                  <strong>AWS S3 File Monitoring and Automated Slack Notification System:</strong> Developed a Golang-based application to automate 
-                  the monitoring of files in an S3 bucket and send real-time notifications via Slack. The application checks for the presence of a 
-                  specific file (based on the current date) in an AWS S3 bucket. If the file is not found, it identifies the most recent available 
-                  file and sends an alert message to a designated Slack channel. Key functionalities include establishing secure connections to AWS 
-                  using access keys, leveraging S3 APIs to check file existence, listing objects to find the latest file, and integrating with the 
-                  Slack API to post notifications. The system runs daily, ensuring timely alerts for missing data files and maintaining business operations. 
-                  It is easily configurable using environment variables for AWS credentials, S3 bucket details, and Slack tokens.
-                </p>
-                <p class="timeline-text">
-                  <strong>Visitor Data Management and Reporting System:</strong> Built a Golang-powered API using the Fiber web framework to efficiently manage 
-                  visitor data and generate detailed reports. The system is designed to capture, store, and retrieve information about visitors, such as 
-                  anonymous IDs, IP addresses, and user agents, while supporting flexible filtering based on date ranges and sorting criteria. Key functionalities 
-                  include fetching paginated lists of synced visitors, sorting and filtering data using query parameters, and generating CSV reports based on 
-                  visitor activity within a specified date range. The report generation feature allows for seamless export of visitor data, storing it in CSV 
-                  format, which can then be downloaded for analysis. The solution leverages MongoDB for data storage, with optimized query handling using the 
-                  MongoDB Go driver. It is structured to ensure efficient performance and scalability, making it ideal for handling large datasets. The project 
-                  also includes robust error handling and modular service-oriented design for easy maintenance and extension.
-                </p>
-                <p class="timeline-text"> 
-                  <strong>Dealer Lifecycle Management System:</strong> Developed a comprehensive system to manage dealer status and prospect conversions 
-                  within a Golang-based API. The system handles the full lifecycle of dealers, from claim status to active and stalled states, 
-                  based on order activity and release conditions. Key functionalities include updating dealer statuses based on order completion, 
-                  managing the release of dealers, and transitioning them through various stages (CLAIMED, ACTIVE, STALLED, INACTIVE). 
-                  The system also supports prospect management, including tracking the status of prospects, sending release notifications, 
-                  and updating statuses as they are either claimed or released. Integrating MongoDB for data storage, the application uses 
-                  efficient batch updates and conditional querying to ensure the correct handling of dealer and prospect records. Additionally, 
-                  scheduled tasks like setting password reset requirements are triggered at specific intervals, ensuring seamless operation across 
-                  different environments (dev/test/prod).
-                </p>
-                <p class="timeline-text"> 
-                  <strong>Droplet and Volume Management System:</strong> Developed a Golang-based application to manage DigitalOcean droplets 
-                  and volumes through the DigitalOcean API. The system allows for the creation of new droplets, attaching volumes to droplets, 
-                  and listing droplets and volumes. It also integrates SFTP functionality using SSH for file management, enabling the upload and 
-                  monitoring of files in specified directories on a remote server. Key features include connecting to a remote server via SFTP, 
-                  listing files in the directory, and managing DigitalOcean resources such as droplets and volumes based on the file system state. 
-                  The application handles volume creation dynamically based on file sizes, attaches volumes to droplets, and logs all interactions 
-                  with the DigitalOcean API for resource creation and management. Additionally, it ensures the secure handling of SSH credentials 
-                  and the automatic connection to SFTP servers via environment variables and SSH agent forwarding.
-                </p>
-                <p class="timeline-text"> 
-                  <strong>File Processing System with RabbitMQ and Address Normalization:</strong> Developed a comprehensive system using Golang, 
-                  Fiber, RabbitMQ, and Python to handle file uploads, message queuing, and address normalization. The Golang-based API enables users 
-                  to upload files, where each line of the file is hashed using SHA256 and published as a message to a RabbitMQ queue. On the consumer 
-                  side, a Python script listens for messages from the queue, processes each message, and attempts to standardize addresses using 
-                  the `scourgify` library. If the address can be normalized, it is formatted into a structured output and printed; otherwise, 
-                  an error message is logged. This design leverages RabbitMQ to decouple the file processing and address normalization tasks, 
-                  allowing asynchronous and scalable message handling. Environment variables are utilized for configuration management, 
-                  while the `logrus` and `pika` libraries are used for logging and RabbitMQ communication, respectively. This architecture ensures 
-                  efficient file handling, message processing, and real-time address validation in a distributed system.
-                </p>
-                <p class="timeline-text">
-                  <strong>Multi-Language Vocabulary Management System:</strong> Developed a robust web application using Python (Flask) and MongoDB to 
-                  manage vocabulary words across multiple languages. This system features user authentication, allowing registered users to securely log 
-                  in and manage word entries. It includes functionality for adding, editing, and categorizing words and translations, supporting languages 
-                  like English, Spanish, Dutch, German, and Hindi. The system also provides REST API endpoints for efficient data retrieval, enabling 
-                  integration with external services. Using Flask-PyMongo, the backend ensures scalable data storage, while HTML templates with Flask's 
-                  Jinja2 rendering engine offer a dynamic and interactive user interface. This project is ideal for language learners, educators, and 
-                  content managers seeking efficient multilingual content organization.
-                </p>
-                <p class="timeline-text">
-                  <strong>Automated FTP Data Import and Processing System:</strong> Built a robust system in Golang to automate data imports 
-                  from an FTP server and store them in a MongoDB database. The application is designed to handle scheduled imports, specifically 
-                  tailored to download CSV files, parse the content, and process it for further use.
-                </p>
-                <p class="timeline-text">
-                  <strong>Cross-Platform Push Notification Service using Flask, Firebase, and Pusher:</strong> Developed a versatile push notification 
-                  service utilizing Python's Flask framework to deliver notifications to iOS, Android, and web platforms. This project is designed to handle 
-                  real-time notifications using Firebase Cloud Messaging (FCM) and Pusher Beams for efficient and reliable message delivery.
-                </p>
-                <p class="timeline-text"> 
-                  <strong>Logo Image Scraper for Dealership Websites using Selenium, BeautifulSoup, and CSV:</strong> 
-                  Created a web scraper that extracts logo images from car dealership websites by utilizing Selenium WebDriver to load pages and 
-                  BeautifulSoup for parsing HTML. The tool scrapes image sources for logos and saves the corresponding URLs to a CSV file, 
-                  automating the process of gathering dealership logos from a list of URLs provided in an input file. This project helps streamline 
-                  the collection of logos for use in marketing or website integration.
-                </p>
-                <p class="timeline-text"> 
-                  <strong>Analytics Visible Visitor API using Elasticsearch and Fiber:</strong> Developed an API using Go's 
-                  Fiber framework that processes batch event data from client requests and indexes it into Elasticsearch. The API handles incoming 
-                  requests containing batch event data, parses the events, and stores the details in Elasticsearch indices for analytics purposes. 
-                  The project involves marshalling event data into structured documents, extracting contextual information like user agent, screen 
-                  dimensions, and referrer data, and asynchronously indexing the documents into Elasticsearch. It utilizes concurrency for efficient 
-                  data processing and includes error handling to ensure smooth operation during document indexing. 
-                </p>
-                <p class="timeline-text"> 
-                  <strong>FTP to Cloud Storage File Transfer Automation:</strong> Developed a file transfer automation system 
-                  using Go that connects to an FTP server, retrieves files that are older than 90 days, and uploads them to a cloud storage solution (Spaces). 
-                  The system starts by establishing a connection to the FTP server using credentials from environment variables. It then checks the 
-                  modification date of each file in the FTP directory, selecting those older than 90 days for transfer. After retrieving the file contents, 
-                  it uploads the files to cloud storage, organizing them by the current date. The project integrates FTP handling, file processing, 
-                  and cloud storage management, automating the archival process of old files to the cloud.
-                </p>
-                <p class="timeline-text">
-                  <strong>Data Syncer:</strong> Created a robust FTP data synchronization service, managing login, file selection, header mapping,
-                  and database integration. Enabled automated data syncing to the database via cron jobs.
-                </p>                
-                <p class="timeline-text">
-                <strong>Reporting:</strong> Reporting service interfacing Google Analytics to retrieve metrics such as user sessions, session times,
-                traffic sources, platform devices, and page tracking. Integrated real-time data retrieval for enhanced analytics.
-                </p>
-                <p class="timeline-text">
-                  <strong>DevOps:</strong> Streamlined DevOps pipeline with DigitalOcean, Docker, Kubernetes, GitHub Actions, and Lens,
-                  ensuring scalable infrastructure and automated code deployment.
-                </p>     
-                <p class="timeline-text">
-                  <strong>DataIntegration:</strong> Service which processes events data from Elasticsearch, extracting and storing relevant info to
-                  database. Offers sessions, pageEvents, ips, and integration management for streamlined data analysis and
-                  integration workflows
-                </p>     
-                <p class="timeline-text">
-                  <strong>AutoTradeX Platform:</strong> Led backend overhaul of AutoTradeX, enabling universal dealer integration for seamless
-                  operations. Enhanced performance and scalability for streamlined buying, selling, and servicing.
-                </p>     
-                <p class="timeline-text">
-                  <strong>Notifications:</strong> Service for sending email utilizing SendGrid APIs and Firebase for in-app and push notifications.
-                </p> 
-                <p class="timeline-text">
-                  <strong>AgileFlow - Advanced Project Management Tool:</strong> Developed and managed backend Golang APIs for AgileFlow, a versatile 
-                  project management tool designed to enhance team workflow efficiency. The platform introduced features like task assignment, due date 
-                  setting, and task commenting for streamlined collaboration. Built a robust messaging and notification service using Google Cloud Platform, 
-                  enabling seamless communication and allowing external services to post messages to chatrooms via a dedicated API. Key functionalities also 
-                  included board management, column and task flows, team management, and user-specific timelines for comprehensive project oversight.
-                </p>         
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Parcelini</h4>
-              <span>Software Engineer | Feb 2021 — Feb 2022 | India</span>
-              <p class="timeline-text">
-                <p class="timeline-text">
-                  <strong>Data Cleanser:</strong> Implemented Python scripts to process CSV files, removing duplicate entries based on specified
-                  columns, standardizing address fields using usaddress-scourgify, and exporting the cleaned data.
-                </p>  
-                <p class="timeline-text">
-                  <strong>Raw Data Processor:</strong>  Created a web application dedicated to raw data processing using Flask, enhancing data
-                  management and processing capabilities.
-                </p>  
-                <!-- <p class="timeline-text">
-                  - Developed the applications using DJANGO framework which is based on model template view design pattern.
-                </p> -->
-              </p>
-            </li>
-
-            <li class="timeline-item">
-              <h4 class="h4 timeline-item-title">Indian Institute of Science, Bangalore</h4>
-              <span>Research Intern | Nov 2016-jan 2017 | Bangalore, India</span>
-
-              <p class="timeline-text">
-                <strong>Pan-Sharpening using DT-CWT:</strong>  Improved satellite imagery quality by applying Java and data fusion
-                techniques to enhance multispectral image resolution through dual-tree complex wavelet transform based
-                Pan-Sharpening, resulting in reduced color distortion and increased scalability and directionality.
-              </p> 
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Knowledge Point Infotech, Jaipur</h4>
-
-              <span>Java Training | Sept 2016-Oct 2016 | Jaipur, India</span>
-
-              <p class="timeline-text">
-                <strong>Java Training:</strong> Covered fundamental and advanced concepts, including object-oriented programming,
-                data structures, and multithreading, to build a strong foundation in Java development.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="figure-body">
+              <p class="figure-label">// currently</p>
+              <p class="figure-line"><span class="figure-key">role</span> Senior Product Engineer</p>
+              <p class="figure-line"><span class="figure-key">org</span> Shuru → Gojek Driver Platform</p>
+              <p class="figure-line"><span class="figure-key">focus</span> payments, compliance, reliability</p>
+              <p class="figure-line"><span class="figure-key">stack</span> Go · Python · Postgres · Kafka</p>
+              <p class="figure-line figure-prompt">$ <span class="figure-cursor" aria-hidden="true"></span></p>
             </div>
-
-            <h3 class="h3">Projects</h3>
           </div>
+        </div>
+      </div>
+    </section>
 
-          <ol class="timeline-list">
+    <!-- APPROACH -->
+    <section class="section section-tight" id="approach">
+      <div class="wrap">
+        <h2 class="section-label reveal"><span class="section-index">01</span> How I work</h2>
+        <div class="approach-grid">
+          <div class="approach-item reveal">
+            <p class="approach-num">01</p>
+            <h3>Systems that scale</h3>
+            <p>Over five years in backend development, building systems designed to hold up under
+              real production load — not just pass a demo.</p>
+          </div>
+          <div class="approach-item reveal">
+            <p class="approach-num">02</p>
+            <h3>Problem → plan → production</h3>
+            <p>Good at analyzing problems, creating plans, and designing reliable solutions —
+              then taking them myself from development through deployment.</p>
+          </div>
+          <div class="approach-item reveal">
+            <p class="approach-num">03</p>
+            <h3>Impact over activity</h3>
+            <p>Focused on processes that get simpler, systems that get faster, and solutions
+              that make a measurable difference for the business.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <li class="timeline-item">
+    <!-- SELECTED WORK -->
+    <section class="section" id="work">
+      <div class="wrap">
+        <p class="section-label reveal"><span class="section-index">02</span> Selected engineering work</p>
+        <h2 class="section-title reveal">Problems owned from RFC to rollout.</h2>
 
-              <h4 class="h4 timeline-item-title">Digital Marketing Platform</h4>
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <p class="work-tags"><span>PostgreSQL</span><span>Performance</span></p>
+            <p class="work-metric">−35% DB CPU pressure</p>
+            <h3>Cut database CPU pressure ~35% under financial transaction load</h3>
+            <p>Diagnosed high-volume transaction workloads with <code>EXPLAIN ANALYZE</code>, then applied
+              targeted index tuning, partition-aware queries, and controlled concurrency — stabilizing
+              mission-critical monthly summary and contribution jobs on the Gojek Driver Platform.</p>
+          </article>
 
-              <span>Ongoing</span>
-              <p class="timeline-text">
-                The Digital Marketing Platform is a comprehensive tool designed for agencies and clients to manage custom marketing campaigns. 
-                The platform includes specialized portals for audience targeting, operations management, reporting, and accounting, with seamless 
-                campaign order creation. Built using a microservices architecture, the platform ensures scalability and performance across various modules, 
-                empowering users to efficiently create, execute, and monitor campaigns in real-time.
-              </p>
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Go</span><span>Fintech</span><span>Distributed Systems</span></p>
+            <p class="work-metric">Recurring tech debt → near zero</p>
+            <h3>Re-architected Singapore's CPF contribution system end-to-end</h3>
+            <p>Rebuilt deduction, monthly summary generation, post-verification refunds, and downstream
+              Gojek contribution flows; tightened service synchronization and drove recurring CPF technical
+              debt to near zero.</p>
+          </article>
 
-              <div class="span-container">
-                <span>Golang, MongoDB, REST APIs, Microservices Architecture</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Compliance</span><span>Data Pipelines</span></p>
+            <p class="work-metric">4 reporting cadences stabilized</p>
+            <h3>Stabilized government-mandated IRAS reporting pipelines</h3>
+            <p>Owned regulatory reporting workflows spanning annual, monthly, weekly, and daily statement
+              pipelines — including driver contribution rate updates, reporting corrections, and financial
+              backfills, with zero tolerance for error.</p>
+          </article>
 
-            </li>
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Reliability</span><span>Observability</span></p>
+            <p class="work-metric">−80% log noise</p>
+            <h3>Built the monitoring stack that cut log noise by ~80%</h3>
+            <p>Implemented Hystrix circuit breakers for service resilience and stood up Prometheus, Grafana,
+              Lens, and New Relic for real-time diagnostics — turning reactive firefighting into proactive
+              alerting.</p>
+          </article>
 
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Go</span><span>Fintech</span><span>QuickBooks API</span></p>
+            <p class="work-metric">100% reconciliation · −30% processing time</p>
+            <h3>Built a Go accounting platform with 100% reconciliation accuracy</h3>
+            <p>Designed and deployed an automated invoicing and commission-calculation platform integrating
+              QuickBooks' API for financial record-keeping — cutting data processing time by 30% while
+              hitting 100% reconciliation accuracy across all transactions.</p>
+          </article>
 
-            <li class="timeline-item">
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Go</span><span>Python</span><span>Integrations</span></p>
+            <p class="work-metric">40% of manual ops automated</p>
+            <h3>Automated partner data operations end-to-end</h3>
+            <p>Built an FTP synchronization service, an OAuth2-secured Facebook Graph API pipeline for
+              ad-spend analytics, and S3-to-Slack file monitoring — replacing manual, error-prone data
+              handling with reliable, scheduled automation.</p>
+          </article>
 
-              <h4 class="h4 timeline-item-title">Image Playground</h4>
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Go</span><span>Fiber</span><span>Elasticsearch</span></p>
+            <h3>Designed a concurrent analytics ingestion API on Elasticsearch</h3>
+            <p>Built a Go Fiber API that parses batched client event data and indexes it into Elasticsearch
+              concurrently — powering real-time visitor analytics across screen, referrer, and session
+              context with structured error handling for reliable ingestion at scale.</p>
+          </article>
 
-              <span>Backend | May 2024</span>
-              <p class="timeline-text">
-                DALL-E Image Playground is a web-based application built using Flask that enables users to interact with OpenAI’s DALL-E API. 
-                The app allows users to generate images from text prompts, edit existing images, and create variations of uploaded images. 
-                It provides an intuitive interface to explore AI-generated visuals with ease, making it an engaging tool for experimenting with generative AI.
-              </p>
+          <article class="work-card reveal">
+            <p class="work-tags"><span>Microservices</span><span>Personal project</span></p>
+            <h3>Architecting a microservices-based digital marketing platform</h3>
+            <p>An ongoing side project: a multi-portal platform for agencies and clients to plan, execute,
+              and report on marketing campaigns — audience targeting, operations, reporting, and accounting
+              built as independently scalable services.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-              <div class="span-container">
-                <span>Flask, OpenAI API, HTML, Pillow</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld/image-playground" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2 class="section-label reveal"><span class="section-index">03</span> Experience</h2>
 
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Issue Manager</h4>
-
-              <span>Fullstack | March 2024</span>
-              <p class="timeline-text">
-                Designed and developed a project issue management web portal, using Flask for the backend REST
-                API and ReactJS for the user interface, enhancing project workflow and collaboration.
-              </p>
-
-              <div class="span-container">
-                <span>Flask, ReactJS</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld/Issue-Manager" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Sorting Visualizer</h4>
-
-              <span>Frontend | Feb 2022</span>
-              <p class="timeline-text">
-                Implemented a dynamic sorting visualizer project showcasing Bubble Sort, Selection Sort, Merge Sort, Quick Sort, and Insertion Sort algorithms.
-                It serves as a practical demonstration of sorting algorithms, aiding in understanding their concepts and efficiencies.
-              </p>
-
-              <div class="span-container">
-                <span>HTML, CSS, Bootstrap, JavaScript</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld/Sorting-Visualizer" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bitcoin Trading via Machine Learning</h4>
-
-              <span>Machine Learning | 2017-2018</span>
-
-              <p class="timeline-text">
-                Developed a robust bitcoin price prediction system utilizing machine learning algorithms like ARIMA, LSTM, and Random Forest.
-                Leveraging daily trends in the Bitcoin market, this project aims to forecast future prices, providing valuable insights for 
-                investors and analysts in the cryptocurrency domain.
-              </p>
-
-              <div class="span-container">
-                <span>Python, ML</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Digital Certificate Dapp using Ethereum</h4>
-
-              <span>BlockChain | 2017-2018</span>
-
-              <p class="timeline-text">
-                <p class="timeline-text">
-                  An idea to use blockchain to create digital certificates, with the goal of sparking innovation that gives individuals
-                   the capacity to possess and share their own official records. Recognizing the significance of University degrees 
-                  (a particular type of certificate), which can help us get the job we want, or prevent us from getting it if we don’t have the right certificate.
-                </p>
-              </p>
-
-              <div class="span-container">
-                <span>Ethereum</span>
-                <span class="space"> </span>
-                <a href="https://github.com/mahiworld" target="_blank" class="project-link">
-                  <ion-icon name="logo-github"></ion-icon>
-                </a>
-                <span class="space10"> </span>
-                <a href="https://example.com" target="_blank" class="project-link">
-                  <ion-icon name="link"></ion-icon>
-                </a>
-              </div>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <p class="when-range">Feb 2025 — Present</p>
+              <p class="when-loc">Gurugram, India</p>
             </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">B.Tech in Computer Science & Engineering</h4>
-
-              <span>2014 — 2018</span>
-
-              <p class="timeline-text">
-                National Institute of Technology, Srinagar
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Intermediate</h4>
-
-              <span>2012 — 2013</span>
-
-              <p class="timeline-text">
-                Sharda Senior Secondary School Badu, Nagaur (Rajasthan)
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">High school</h4>
-
-              <span>2010 — 2011</span>
-
-              <p class="timeline-text">
-                Shree Veer Teja Senior Secondary School Bhadwa, Nagaur (Rajasthan)
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Programming : &nbsp; </h5>
-                <data>C, </data>
-                <data>Python, </data>
-                <data>Golang,</data>
-                <data>HTML,</data>
-                <data>CSS,</data>
-                <data>JavaScript,</data>
-                <data>Java</data>
-              </div>
-
-              <!-- <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 80%;"></div>
-              </div> -->
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">LIBRARIES/FRAMEWORKS : &nbsp; </h5>
-                <data>Flask, </data>
-                <data>Django, </data>
-                <data>Fiber, </data>
-                <data>Gin, </data>
-                <data>Go-Chi</data>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">DevOps : &nbsp; </h5>
-                <data>Docker, </data>
-                <data>Kubernetes, </data>
-                <data>GitHub Actions, </data>
-                <data>DigitalOcean, </data>
-                <data>Lens</data>
-              </div>
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">TOOLS/PLATFORMS : &nbsp; </h5>
-                <data>Git, </data>
-                <data>Heroku, </data>
-                <data>VS Code, </data>
-                <data>Windows, </data>
-                <data>Linux, </data>
-                <data>Swagger, </data>
-                <data>Postman, </data>
-                <data>Google Analytics</data>
-              </div>
-            </li>
-
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">Databases : &nbsp; </h5>
-                <data>MongoDB, </data>
-                <data>PostgreSQL</data>
-              </div>
-            </li>
-
-            <li class="skills-item">
-
-              <div class="title-wrapper">
-                <h5 class="h5">OTHERS : &nbsp; </h5>
-                <data>QuickBooks, </data>
-                <data>HubSpot</data>
-              </div>
-            </li>
-
-          </ul>
-
-        </section>
-
-        <br>
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+            <div class="timeline-body">
+              <h3>Senior Product Engineer</h3>
+              <p class="timeline-org">Shuru Technologies <span class="org-sep">·</span> contracted to Gojek, Driver Platform</p>
+              <ul>
+                <li>Diagnosed and optimized high-volume financial transaction workloads, cutting database CPU pressure by ~35% and stabilizing mission-critical monthly summary and contribution jobs.</li>
+                <li>Owned government-mandated compliance workflows — driver contribution rate updates, reporting corrections, financial backfills — and stabilized Singapore IRAS reporting across annual, monthly, weekly, and daily pipelines.</li>
+                <li>Re-architected Singapore CPF contribution workflows (deduction, monthly summary, post-verification refunds, Gojek contribution flows), driving recurring technical debt to near zero.</li>
+                <li>Implemented Hystrix circuit breakers and a Prometheus/Grafana/Lens/New Relic monitoring stack, cutting log noise by ~80% and improving proactive alerting.</li>
+                <li>Led backend delivery for Multi-Merchant delivery support, On-Time Logistics, subscription/fleet flows, and income transparency — end-to-end from schema design through production rollout.</li>
+              </ul>
             </div>
+          </li>
 
-            <h3 class="h3">Awards/certifications</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Rajsthan Hackathon</h4>
-
-              <span>Participated | April 2018</span>
-              <p class="timeline-text">
-                - Developed distributed Voting Application.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Techfest NIT Srinagar</h4>
-
-              <span>3rd position | April 2015</span>
-
-              <p class="timeline-text">
-                - Participated in Robotics event.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <p class="when-range">Mar 2022 — Feb 2025</p>
+              <p class="when-loc">Remote, India</p>
             </div>
+            <div class="timeline-body">
+              <h3>Software Developer</h3>
+              <p class="timeline-org">Epek Software Solutions</p>
+              <ul>
+                <li>Designed and deployed a Go-based accounting platform for automated invoicing and commission calculation, cutting data processing time by 30% with 100% reconciliation accuracy.</li>
+                <li>Built an FTP synchronization service that automated 40% of recurring manual operations, improving data freshness for external partner integrations.</li>
+                <li>Mentored engineering interns through structured code reviews and technical design sessions, raising team-wide engineering standards.</li>
+              </ul>
+            </div>
+          </li>
 
-            <h3 class="h3">Training/Courses</h3>
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <p class="when-range">Feb 2021 — Feb 2022</p>
+              <p class="when-loc">Remote, India</p>
+            </div>
+            <div class="timeline-body">
+              <h3>Software Engineer</h3>
+              <p class="timeline-org">Parcelini</p>
+              <ul>
+                <li>Built Go-based REST APIs and internal task management tooling, improving project tracking transparency and completion visibility by 25%.</li>
+                <li>Developed Python/Flask automation scripts for large-scale CSV data cleansing and address normalization.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item reveal">
+            <div class="timeline-when">
+              <p class="when-range">Nov 2016 — Jan 2017</p>
+              <p class="when-loc">Bengaluru, India</p>
+            </div>
+            <div class="timeline-body">
+              <h3>Research Intern</h3>
+              <p class="timeline-org">Indian Institute of Science (IISc), Bangalore</p>
+              <ul>
+                <li>Implemented DT-CWT based pan-sharpening for satellite imagery in Java, enhancing image resolution while minimizing color distortion.</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="section-label reveal"><span class="section-index">04</span> Core skills</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Languages &amp; Backend</h3>
+            <p>Go (Golang), Python, REST APIs, gRPC, Microservices, Distributed Systems, Async / Event-Driven Processing</p>
           </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Knowledge Point Infotech, Jaipur</h4>
-
-              <span>CoreJava Training | sept 2016-oct 2016 | Jaipur, India</span>
-              <p class="timeline-text">
-                <!-- - Developed distributed Voting Application. -->
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">The Complete Web Developer</h4>
-
-              <span>Nov 2021-Jan 2022 | Udemy</span>
-
-              <p class="timeline-text">
-                <!-- - Participated in Robotics event. -->
-              </p>
-
-            </li>
-
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">MongoDB Basics</h4>
-
-              <span>Sept 2022-Oct 2022 | MongoDB University</span>
-
-              <p class="timeline-text">
-                <!-- - Participated in Robotics event. -->
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-
-      </article>
-
-          <div class="filter-select-box">
-            <button class="filter-select" data-select>
-              <div class="select-value" data-selecct-value>Select category</div>
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-            </button>
+          <div class="skill-group reveal">
+            <h3>Data &amp; Messaging</h3>
+            <p>PostgreSQL, MongoDB, Redis, RabbitMQ, Kafka (DLQ / Retry patterns), BigQuery, MaxCompute</p>
           </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; Reliability</h3>
+            <p>AWS, GCP, Tencent Cloud, Docker, Kubernetes, CI/CD, Prometheus, Grafana, New Relic, PagerDuty, Hystrix</p>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Engineering Practice</h3>
+            <p>System Design, RFC Authoring, Data Structures &amp; Algorithms, Code Review, Git, Postman, Swagger, Metabase, ToolJet</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      </article>
+    <!-- EDUCATION -->
+    <section class="section section-tight" id="education">
+      <div class="wrap">
+        <h2 class="section-label reveal"><span class="section-index">05</span> Education</h2>
+        <div class="edu-row reveal">
+          <div>
+            <h3>B.Tech, Computer Science &amp; Engineering</h3>
+            <p class="timeline-org">National Institute of Technology (NIT), Srinagar</p>
+          </div>
+          <div class="edu-meta">
+            <p>2014 — 2018</p>
+            <p>CGPA 7.59</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    </div>
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="wrap contact-wrap">
+        <p class="section-label reveal"><span class="section-index">06</span> Get in touch</p>
+        <h2 class="contact-title reveal">Let's talk about your hardest backend problem.</h2>
+        <p class="contact-lede reveal">Open to Senior / Staff backend and platform engineering roles.
+          I read every message myself.</p>
+
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary btn-large" href="mailto:mahiworld4@gmail.com">mahiworld4@gmail.com</a>
+          <button class="btn btn-ghost btn-large" id="copyEmail" type="button" data-email="mahiworld4@gmail.com">Copy email</button>
+        </div>
+
+        <div class="contact-links reveal">
+          <a href="https://github.com/mahiworld" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://www.linkedin.com/in/mahendrachaudharycr7/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="tel:+919785686466">+91 97856 86466</a>
+          <a href="./assets/resume/Mahendra-Resume.pdf" target="_blank" rel="noopener">Résumé (PDF)</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
+  <footer class="site-footer">
+    <div class="wrap footer-row">
+      <p>© <span id="year"></span> Mahendra. Built with HTML, CSS, and disciplined query plans.</p>
+      <a href="#top">Back to top ↑</a>
+    </div>
+  </footer>
 
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
-
 </html>
